@@ -1,0 +1,39 @@
+	  /* body 전체에 적용되는 기본 스타일 */
+      body{
+         font-family: sans-serif;      /* 기본 글꼴 사용 */
+         margin: 0;                  /* 바깥 여백 제거 */
+         display: flex;               /* 좌우로 나누는 구조 flexbox */
+         height: 100vh;               /* 화면 전체 높이 사용 */
+      }
+      
+      /* 왼쪽 사이드바 영역 스타일 */
+      .sidebar{
+         width: 150px;               /* 사이드바 너비 고정 */
+         border-right: 1px solid #ccc;   /* 오른쪽 경계선 (회색 실선) */
+         padding: 10px;               /* 내부 여백 */
+      }
+      
+      /* 사이드바 내부 버튼 스타일 */
+      .sidebar button{
+         display: block;               /* 블럭 요소로 변환, 수직 정렬 */
+         width: 100%;               /* 너비 100% */
+         margin-bottom: 10px;         /* 버튼 간 간격 */
+         padding: 8px;               /* 버튼 안쪽 여백 */
+         cursor: pointer;            /* 마우스 올리면 포인터로 변경 */
+         background: #f5f5f5;         /* 배경 색 (회색) */
+         border: none;               /* 테두리 제거 */
+         border-radius: 4px;            /* 모서리 둥글게 처리 */
+         text-align: left;            /* 버튼 내부 왼쪽 정렬 */
+      }
+      
+      /* 사이드바 - 활성화된 버튼 스타일 */
+      .sidebar button.active{
+         background: #007bff;         /* 배경: 진한 파란색 */
+         color: white;               /* 글자색: 흰색 */
+      }
+      
+      /* 오른쪽 콘텐츠 영역 스타일 */
+      .content{
+         display: block;              /* 블럭 요소로 변환, 수직 정렬 */
+         padding: 20px;               /* 안쪽 여백 */
+      }
